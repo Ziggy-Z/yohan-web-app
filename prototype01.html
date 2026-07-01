@@ -1,0 +1,1004 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>1st & Amazing · New Flower | Adult Family Homes — Lynnwood, WA</title>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,600;0,700;1,400;1,600&family=Jost:wght@300;400;500;600&display=swap" rel="stylesheet" />
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    :root {
+      --pine:        #243D30;
+      --pine-mid:    #335544;
+      --pine-pale:   #E6EDE8;
+      --clay:        #B86348;
+      --clay-pale:   #F5EBE7;
+      --stone:       #F4F1EC;
+      --white:       #FFFFFF;
+      --ink:         #1A2420;
+      --slate:       #607068;
+      --rule:        rgba(36,61,48,0.14);
+      --gold:        #A8895C;
+    }
+    html { scroll-behavior: smooth; }
+    body {
+      font-family: 'Jost', sans-serif;
+      background: var(--stone);
+      color: var(--ink);
+      overflow-x: hidden;
+      -webkit-font-smoothing: antialiased;
+    }
+
+    /* NAV */
+    nav {
+      position: fixed; top: 0; left: 0; right: 0; z-index: 200;
+      display: flex; align-items: center; justify-content: space-between;
+      padding: 0 60px; height: 68px;
+      background: rgba(244,241,236,0.97);
+      backdrop-filter: blur(14px);
+      border-bottom: 1px solid var(--rule);
+    }
+    .nav-brand { display: flex; align-items: center; gap: 14px; text-decoration: none; }
+    .brand-mark { display: flex; flex-direction: column; gap: 4px; }
+    .brand-mark-line { height: 1.5px; background: var(--pine); }
+    .brand-mark-line:first-child { width: 28px; }
+    .brand-mark-line:last-child  { width: 18px; background: var(--clay); }
+    .brand-text { line-height: 1; }
+    .brand-text-top {
+      font-family: 'Cormorant Garamond', serif;
+      font-size: 1rem; font-weight: 700; letter-spacing: 0.04em; color: var(--ink);
+    }
+    .brand-text-sub {
+      display: block; margin-top: 3px;
+      font-size: 0.65rem; font-weight: 500; letter-spacing: 0.12em;
+      text-transform: uppercase; color: var(--slate);
+    }
+    .nav-links { display: flex; gap: 36px; list-style: none; }
+    .nav-links a {
+      font-size: 0.8rem; font-weight: 500; letter-spacing: 0.07em;
+      color: var(--slate); text-decoration: none; text-transform: uppercase;
+      transition: color 0.2s;
+    }
+    .nav-links a:hover { color: var(--pine); }
+    .nav-cta {
+      background: var(--pine); color: var(--white);
+      padding: 10px 24px; border-radius: 3px;
+      font-size: 0.78rem; font-weight: 600; letter-spacing: 0.08em;
+      text-decoration: none; text-transform: uppercase; transition: background 0.2s;
+    }
+    .nav-cta:hover { background: var(--pine-mid); }
+
+    /* HERO */
+    .hero {
+      min-height: 100vh; padding-top: 68px;
+      display: grid; grid-template-columns: 1fr 1fr;
+      background: var(--stone);
+    }
+    .hero-left {
+      display: flex; flex-direction: column; justify-content: center;
+      padding: 80px 64px 80px 60px;
+      border-right: 1px solid var(--rule);
+    }
+    .hero-homes-label {
+      display: flex; align-items: center; gap: 14px; margin-bottom: 40px;
+    }
+    .home-tag {
+      font-size: 0.7rem; font-weight: 600; letter-spacing: 0.1em;
+      text-transform: uppercase; padding: 5px 12px;
+      border: 1px solid currentColor; border-radius: 2px;
+    }
+    .home-tag-a { color: var(--pine); }
+    .home-tag-b { color: var(--clay); }
+    .homes-label-div { width: 1px; height: 16px; background: var(--rule); }
+    h1.hero-headline {
+      font-family: 'Cormorant Garamond', serif;
+      font-size: clamp(3rem, 4.5vw, 4.4rem);
+      font-weight: 600; line-height: 1.08;
+      letter-spacing: -0.01em; color: var(--ink); margin-bottom: 28px;
+    }
+    h1.hero-headline em { font-style: italic; color: var(--pine); }
+    .hero-rule {
+      width: 100%; height: 1px;
+      background: linear-gradient(90deg, var(--pine) 0%, rgba(36,61,48,0.08) 60%);
+      margin-bottom: 28px;
+    }
+    .hero-sub {
+      font-size: 1rem; line-height: 1.85; font-weight: 300;
+      color: var(--slate); max-width: 400px; margin-bottom: 48px;
+    }
+    .hero-actions { display: flex; flex-direction: column; gap: 20px; }
+    .btn-primary {
+      display: inline-flex; align-items: center; gap: 10px;
+      background: var(--pine); color: var(--white);
+      padding: 15px 30px; border-radius: 3px;
+      font-size: 0.8rem; font-weight: 600; letter-spacing: 0.08em;
+      text-decoration: none; text-transform: uppercase;
+      transition: background 0.2s; align-self: flex-start;
+    }
+    .btn-primary:hover { background: var(--pine-mid); }
+    .hero-phones { display: flex; gap: 24px; align-items: center; }
+    .phone-link { text-decoration: none; display: flex; flex-direction: column; }
+    .phone-label {
+      font-size: 0.65rem; font-weight: 600; letter-spacing: 0.1em;
+      text-transform: uppercase; margin-bottom: 3px;
+    }
+    .phone-link-a .phone-label { color: var(--pine); }
+    .phone-link-b .phone-label { color: var(--clay); }
+    .phone-num {
+      font-family: 'Cormorant Garamond', serif;
+      font-size: 1.15rem; font-weight: 700; color: var(--ink);
+      transition: color 0.2s;
+    }
+    .phone-link:hover .phone-num { color: var(--pine); }
+    .phone-div { width: 1px; height: 36px; background: var(--rule); }
+
+    /* Hero right */
+    .hero-right { display: flex; flex-direction: column; background: var(--white); }
+    .hero-illustration {
+      flex: 1; display: flex; align-items: center; justify-content: center;
+      padding: 48px; background: var(--pine-pale); position: relative; overflow: hidden;
+    }
+    .hero-illustration::before {
+      content: '';
+      position: absolute; inset: 0;
+      background-image:
+        linear-gradient(rgba(36,61,48,0.05) 1px, transparent 1px),
+        linear-gradient(90deg, rgba(36,61,48,0.05) 1px, transparent 1px);
+      background-size: 32px 32px;
+    }
+    .hero-stat-panel {
+      border-top: 1px solid var(--rule);
+      display: grid; grid-template-columns: repeat(3, 1fr);
+    }
+    .hero-stat-item {
+      padding: 28px 24px; border-right: 1px solid var(--rule);
+    }
+    .hero-stat-item:last-child { border-right: none; }
+    .stat-val {
+      font-family: 'Cormorant Garamond', serif;
+      font-size: 2rem; font-weight: 700; color: var(--ink);
+      line-height: 1; margin-bottom: 6px;
+    }
+    .stat-val span { color: var(--pine); }
+    .stat-label {
+      font-size: 0.7rem; font-weight: 500; letter-spacing: 0.07em;
+      text-transform: uppercase; color: var(--slate); line-height: 1.5;
+    }
+
+    /* SECTION UTILITIES */
+    .section-kicker {
+      display: flex; align-items: center; gap: 12px;
+      font-size: 0.7rem; font-weight: 600; letter-spacing: 0.14em;
+      text-transform: uppercase; color: var(--clay); margin-bottom: 16px;
+    }
+    .section-kicker::before { content: ''; width: 24px; height: 1.5px; background: var(--clay); }
+    h2.section-headline {
+      font-family: 'Cormorant Garamond', serif;
+      font-size: clamp(1.9rem, 2.6vw, 2.7rem);
+      font-weight: 600; line-height: 1.15; color: var(--ink);
+    }
+    .section-body {
+      font-size: 0.95rem; line-height: 1.85; font-weight: 300;
+      color: var(--slate); margin-top: 16px;
+    }
+
+    /* PILLARS BAR */
+    .pillars-bar {
+      background: var(--pine);
+      display: grid; grid-template-columns: repeat(4, 1fr);
+    }
+    .pillar {
+      padding: 48px 32px;
+      border-right: 1px solid rgba(255,255,255,0.08);
+      display: flex; flex-direction: column; gap: 16px;
+    }
+    .pillar:last-child { border-right: none; }
+    .pillar-icon-wrap {
+      width: 40px; height: 40px;
+      display: flex; align-items: center; justify-content: center;
+    }
+    .pillar-num {
+      font-family: 'Cormorant Garamond', serif;
+      font-size: 2.6rem; font-weight: 700; color: var(--white); line-height: 1;
+    }
+    .pillar-num sup { font-size: 1rem; color: rgba(255,255,255,0.45); }
+    .pillar-label {
+      font-size: 0.72rem; font-weight: 500; letter-spacing: 0.1em;
+      text-transform: uppercase; color: rgba(255,255,255,0.4); line-height: 1.6;
+    }
+
+    /* AFH EXPLAINER */
+    .afh-explainer {
+      background: var(--white);
+      display: grid; grid-template-columns: 1fr 1fr;
+    }
+    .explainer-left {
+      padding: 96px 64px 96px 60px; border-right: 1px solid var(--rule);
+    }
+    .compare-table { margin-top: 40px; width: 100%; border-collapse: collapse; }
+    .compare-table thead tr { border-bottom: 1.5px solid var(--ink); }
+    .compare-table th {
+      font-size: 0.7rem; font-weight: 600; letter-spacing: 0.1em;
+      text-transform: uppercase; padding: 0 0 12px; text-align: left;
+    }
+    .th-afh { color: var(--pine); padding-right: 32px; }
+    .th-fac { color: var(--slate); }
+    .compare-table tbody tr { border-bottom: 1px solid var(--rule); }
+    .compare-table td {
+      padding: 13px 0; font-size: 0.85rem; vertical-align: middle; line-height: 1.5;
+    }
+    .td-afh { color: var(--ink); padding-right: 32px; }
+    .td-fac { color: var(--slate); }
+
+    .explainer-right { padding: 96px 60px 96px 64px; }
+    .feature-rows { display: flex; flex-direction: column; margin-top: 40px; }
+    .feature-row {
+      display: grid; grid-template-columns: 52px 1fr;
+      gap: 0 22px; align-items: start;
+      padding: 28px 0; border-bottom: 1px solid var(--rule);
+    }
+    .feature-row:last-child { border-bottom: none; }
+    .feature-icon-wrap {
+      width: 52px; height: 52px;
+      display: flex; align-items: center; justify-content: center;
+      border: 1px solid var(--rule); border-radius: 3px;
+      background: var(--stone);
+    }
+    .feature-title {
+      font-size: 0.9rem; font-weight: 600; color: var(--ink);
+      margin-bottom: 6px;
+    }
+    .feature-desc {
+      font-size: 0.84rem; line-height: 1.7; font-weight: 300; color: var(--slate);
+    }
+
+    /* OUR TWO HOMES */
+    .our-homes { background: var(--stone); padding: 96px 60px; }
+    .our-homes-header { margin-bottom: 48px; }
+    .homes-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 24px; }
+    .home-profile {
+      background: var(--white); border: 1px solid var(--rule);
+      border-radius: 2px; overflow: hidden;
+    }
+    .home-profile-top {
+      padding: 40px 40px 32px; border-bottom: 1px solid var(--rule); position: relative;
+    }
+    .home-a .home-profile-top { border-top: 3px solid var(--pine); }
+    .home-b .home-profile-top { border-top: 3px solid var(--clay); }
+    .home-profile-tag {
+      font-size: 0.68rem; font-weight: 600; letter-spacing: 0.12em;
+      text-transform: uppercase; margin-bottom: 12px;
+    }
+    .home-a .home-profile-tag { color: var(--pine); }
+    .home-b .home-profile-tag { color: var(--clay); }
+    .home-profile-name {
+      font-family: 'Cormorant Garamond', serif;
+      font-size: 1.6rem; font-weight: 700; line-height: 1.15;
+      color: var(--ink); margin-bottom: 20px;
+    }
+    .home-profile-meta { display: flex; gap: 20px; flex-wrap: wrap; }
+    .meta-item {
+      display: flex; align-items: center; gap: 7px;
+      font-size: 0.78rem; font-weight: 500; color: var(--slate);
+    }
+    .home-profile-body { padding: 32px 40px 40px; }
+    .services-label {
+      font-size: 0.68rem; font-weight: 600; letter-spacing: 0.12em;
+      text-transform: uppercase; color: var(--slate); margin-bottom: 20px;
+    }
+    .services-list { list-style: none; display: flex; flex-direction: column; margin-bottom: 32px; }
+    .services-list li {
+      display: grid; grid-template-columns: 18px 1fr;
+      gap: 10px; align-items: center;
+      font-size: 0.85rem; color: var(--ink);
+      padding: 11px 0; border-bottom: 1px solid var(--rule);
+    }
+    .services-list li:last-child { border-bottom: none; }
+    .btn-home {
+      display: flex; align-items: center; justify-content: center; gap: 10px;
+      width: 100%; padding: 14px; border-radius: 2px;
+      font-size: 0.78rem; font-weight: 600; letter-spacing: 0.08em;
+      text-decoration: none; text-transform: uppercase; transition: all 0.2s;
+    }
+    .home-a .btn-home { background: var(--pine); color: var(--white); }
+    .home-a .btn-home:hover { background: var(--pine-mid); }
+    .home-b .btn-home { background: var(--clay); color: var(--white); }
+    .home-b .btn-home:hover { background: #a55a40; }
+    .license-strip {
+      margin-top: 40px; display: flex; align-items: center; gap: 16px;
+      padding: 18px 24px; background: var(--pine-pale);
+      border: 1px solid var(--rule); border-radius: 2px;
+    }
+    .license-text {
+      font-size: 0.8rem; color: var(--pine); line-height: 1.5;
+    }
+
+    /* SERVICES */
+    .services-section { background: var(--white); padding: 96px 60px; }
+    .services-header-grid {
+      display: grid; grid-template-columns: 1fr 1fr;
+      gap: 48px; align-items: end; margin-bottom: 48px;
+    }
+    .services-grid {
+      display: grid; grid-template-columns: repeat(4, 1fr);
+      border: 1px solid var(--rule);
+    }
+    .service-tile {
+      padding: 36px 28px;
+      border-right: 1px solid var(--rule);
+      border-bottom: 1px solid var(--rule);
+      transition: background 0.2s;
+    }
+    .service-tile:nth-child(4n)   { border-right: none; }
+    .service-tile:nth-child(n+5)  { border-bottom: none; }
+    .service-tile:hover           { background: var(--stone); }
+    .tile-icon-wrap {
+      width: 44px; height: 44px;
+      display: flex; align-items: center; justify-content: center;
+      border: 1px solid var(--rule); border-radius: 2px;
+      margin-bottom: 20px; transition: border-color 0.2s;
+    }
+    .service-tile:hover .tile-icon-wrap { border-color: var(--pine); }
+    .tile-name {
+      font-size: 0.88rem; font-weight: 600; color: var(--ink);
+      margin-bottom: 10px; line-height: 1.35;
+    }
+    .tile-desc { font-size: 0.8rem; line-height: 1.7; font-weight: 300; color: var(--slate); }
+
+    /* TESTIMONIAL */
+    .testimonial-section {
+      background: var(--pine); padding: 96px 60px;
+      display: grid; grid-template-columns: 1fr 2fr; gap: 80px; align-items: center;
+    }
+    .test-kicker {
+      font-size: 0.7rem; font-weight: 600; letter-spacing: 0.14em;
+      text-transform: uppercase; color: rgba(255,255,255,0.4);
+      margin-bottom: 20px; display: flex; align-items: center; gap: 10px;
+    }
+    .test-kicker::before { content: ''; width: 20px; height: 1.5px; background: rgba(255,255,255,0.3); }
+    .test-left-headline {
+      font-family: 'Cormorant Garamond', serif;
+      font-size: 1.6rem; font-weight: 600; color: var(--white); line-height: 1.3;
+    }
+    .star-row { display: flex; gap: 4px; margin-bottom: 24px; }
+    .test-quote {
+      font-family: 'Cormorant Garamond', serif;
+      font-size: clamp(1.4rem, 1.8vw, 1.75rem); font-style: italic;
+      color: var(--white); line-height: 1.6; margin-bottom: 32px;
+    }
+    .test-author {
+      display: flex; align-items: center; gap: 16px;
+      padding-top: 24px; border-top: 1px solid rgba(255,255,255,0.12);
+    }
+    .author-initial {
+      width: 44px; height: 44px; border-radius: 50%;
+      border: 1.5px solid rgba(255,255,255,0.25);
+      display: flex; align-items: center; justify-content: center;
+      font-family: 'Cormorant Garamond', serif;
+      font-size: 1.2rem; font-weight: 700; color: rgba(255,255,255,0.8);
+    }
+    .author-name { font-size: 0.85rem; font-weight: 600; color: rgba(255,255,255,0.8); margin-bottom: 2px; }
+    .author-role { font-size: 0.75rem; color: rgba(255,255,255,0.4); font-weight: 300; }
+
+    /* CONTACT */
+    .contact-section {
+      background: var(--stone); padding: 96px 60px;
+      display: grid; grid-template-columns: 1fr 1fr; gap: 80px; align-items: start;
+    }
+    .contact-left h2 {
+      font-family: 'Cormorant Garamond', serif;
+      font-size: clamp(2rem, 3vw, 3rem); font-weight: 600;
+      line-height: 1.1; color: var(--ink); margin-top: 16px; margin-bottom: 20px;
+    }
+    .contact-left h2 em { font-style: italic; color: var(--pine); }
+    .contact-sub {
+      font-size: 0.95rem; line-height: 1.85; font-weight: 300;
+      color: var(--slate); margin-bottom: 36px;
+    }
+    .contact-btn-group { display: flex; gap: 12px; flex-wrap: wrap; }
+    .btn-contact {
+      display: inline-flex; align-items: center; gap: 10px;
+      padding: 14px 26px; border-radius: 3px;
+      font-size: 0.78rem; font-weight: 600; letter-spacing: 0.08em;
+      text-decoration: none; text-transform: uppercase; transition: background 0.2s;
+    }
+    .btn-contact-a { background: var(--pine); color: var(--white); }
+    .btn-contact-a:hover { background: var(--pine-mid); }
+    .btn-contact-b { background: var(--clay); color: var(--white); }
+    .btn-contact-b:hover { background: #a55a40; }
+    .contact-cards { display: flex; flex-direction: column; }
+    .contact-card {
+      display: grid; grid-template-columns: 48px 1fr;
+      gap: 20px; align-items: start;
+      padding: 28px 0; border-bottom: 1px solid var(--rule);
+    }
+    .contact-card:first-child { border-top: 1px solid var(--rule); }
+    .cc-icon {
+      width: 48px; height: 48px; border: 1px solid var(--rule);
+      border-radius: 2px; display: flex; align-items: center; justify-content: center;
+      background: var(--white); margin-top: 2px;
+    }
+    .cc-label {
+      font-size: 0.68rem; font-weight: 600; letter-spacing: 0.12em;
+      text-transform: uppercase; color: var(--slate); margin-bottom: 5px;
+    }
+    .cc-name {
+      font-family: 'Cormorant Garamond', serif;
+      font-size: 1.1rem; font-weight: 700; color: var(--ink); margin-bottom: 4px;
+    }
+    .cc-phone { font-size: 0.85rem; font-weight: 500; color: var(--pine); }
+    .cc-city { font-size: 0.78rem; color: var(--slate); font-weight: 300; margin-top: 2px; }
+
+    /* FOOTER */
+    footer { background: var(--ink); padding: 56px 60px 40px; }
+    .footer-top {
+      display: grid; grid-template-columns: 2fr 1fr 1fr;
+      gap: 48px; padding-bottom: 40px;
+      border-bottom: 1px solid rgba(255,255,255,0.08); margin-bottom: 28px;
+    }
+    .footer-brand-name {
+      font-family: 'Cormorant Garamond', serif;
+      font-size: 1.1rem; font-weight: 700; color: var(--white); margin-bottom: 12px;
+    }
+    .footer-brand-name span { color: var(--clay); }
+    .footer-desc {
+      font-size: 0.82rem; line-height: 1.7; font-weight: 300;
+      color: rgba(255,255,255,0.35); max-width: 280px;
+    }
+    .footer-col-title {
+      font-size: 0.65rem; font-weight: 600; letter-spacing: 0.14em;
+      text-transform: uppercase; color: rgba(255,255,255,0.3); margin-bottom: 18px;
+    }
+    .footer-links { list-style: none; display: flex; flex-direction: column; gap: 12px; }
+    .footer-links a {
+      font-size: 0.82rem; font-weight: 300; color: rgba(255,255,255,0.5);
+      text-decoration: none; transition: color 0.2s;
+    }
+    .footer-links a:hover { color: var(--white); }
+    .footer-bottom {
+      display: flex; align-items: center; justify-content: space-between;
+      font-size: 0.72rem; color: rgba(255,255,255,0.25);
+    }
+    .footer-badges { display: flex; gap: 8px; }
+    .f-badge {
+      padding: 4px 10px; border: 1px solid rgba(255,255,255,0.1); border-radius: 2px;
+      font-size: 0.65rem; font-weight: 600; letter-spacing: 0.08em;
+      text-transform: uppercase; color: rgba(255,255,255,0.3);
+    }
+
+    /* RESPONSIVE */
+    @media (max-width: 960px) {
+      nav { padding: 0 24px; }
+      .nav-links { display: none; }
+      .hero { grid-template-columns: 1fr; }
+      .hero-left { padding: 56px 24px; border-right: none; border-bottom: 1px solid var(--rule); }
+      .hero-right { min-height: 280px; }
+      .pillars-bar { grid-template-columns: 1fr 1fr; }
+      .afh-explainer { grid-template-columns: 1fr; }
+      .explainer-left { padding: 64px 24px; border-right: none; border-bottom: 1px solid var(--rule); }
+      .explainer-right { padding: 64px 24px; }
+      .our-homes, .services-section, .contact-section { padding: 64px 24px; }
+      .homes-grid { grid-template-columns: 1fr; }
+      .services-header-grid { grid-template-columns: 1fr; }
+      .services-grid { grid-template-columns: 1fr 1fr; }
+      .service-tile:nth-child(4n) { border-right: 1px solid var(--rule); }
+      .service-tile:nth-child(2n) { border-right: none; }
+      .service-tile:nth-child(n+5) { border-bottom: 1px solid var(--rule); }
+      .service-tile:nth-child(n+7) { border-bottom: none; }
+      .testimonial-section { grid-template-columns: 1fr; gap: 40px; padding: 64px 24px; }
+      .contact-section { grid-template-columns: 1fr; }
+      .footer-top { grid-template-columns: 1fr; }
+      .footer-bottom { flex-direction: column; gap: 16px; text-align: center; }
+    }
+  </style>
+</head>
+<body>
+
+<!-- NAV -->
+<nav>
+  <a href="#" class="nav-brand">
+    <div class="brand-mark">
+      <div class="brand-mark-line"></div>
+      <div class="brand-mark-line"></div>
+    </div>
+    <div class="brand-text">
+      <span class="brand-text-top">1st &amp; Amazing &middot; New Flower</span>
+      <span class="brand-text-sub">Adult Family Homes &mdash; Lynnwood, WA</span>
+    </div>
+  </a>
+  <ul class="nav-links">
+    <li><a href="#why-afh">Why AFH?</a></li>
+    <li><a href="#our-homes">Our Homes</a></li>
+    <li><a href="#services">Services</a></li>
+    <li><a href="#contact">Contact</a></li>
+  </ul>
+  <a href="#contact" class="nav-cta">Schedule a Tour</a>
+</nav>
+
+<!-- HERO -->
+<section class="hero">
+  <div class="hero-left">
+    <div class="hero-homes-label">
+      <span class="home-tag home-tag-a">1st &amp; Amazing AFH</span>
+      <div class="homes-label-div"></div>
+      <span class="home-tag home-tag-b">New Flower AFH</span>
+    </div>
+    <h1 class="hero-headline">A real home.<br/><em>Real care.</em><br/>Real family.</h1>
+    <div class="hero-rule"></div>
+    <p class="hero-sub">Our state-licensed Adult Family Homes in Lynnwood, WA provide seniors and adults with disabilities personalized, 24-hour care in a genuine residential setting &mdash; never an institution.</p>
+    <div class="hero-actions">
+      <a href="#contact" class="btn-primary">
+        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
+        Schedule a Tour
+      </a>
+      <div class="hero-phones">
+        <a href="tel:2064464472" class="phone-link phone-link-a">
+          <span class="phone-label">1st &amp; Amazing</span>
+          <span class="phone-num">(206) 446-4472</span>
+        </a>
+        <div class="phone-div"></div>
+        <a href="tel:8324925521" class="phone-link phone-link-b">
+          <span class="phone-label">New Flower</span>
+          <span class="phone-num">(832) 492-5521</span>
+        </a>
+      </div>
+    </div>
+  </div>
+
+  <div class="hero-right">
+    <div class="hero-illustration">
+      <svg viewBox="0 0 420 300" width="380" xmlns="http://www.w3.org/2000/svg" fill="none" style="position:relative;z-index:1;">
+        <g stroke="#243D30" stroke-linecap="round" stroke-linejoin="round">
+          <!-- Main house -->
+          <polyline points="40,148 210,44 380,148" stroke-width="2"/>
+          <rect x="60" y="148" width="300" height="148" stroke-width="1.5"/>
+          <!-- Chimney -->
+          <rect x="282" y="64" width="28" height="48" stroke-width="1.5"/>
+          <!-- Front door -->
+          <rect x="174" y="208" width="52" height="88" rx="26" stroke-width="1.5"/>
+          <circle cx="220" cy="255" r="3" stroke-width="1.5" fill="#243D30"/>
+          <!-- Left window -->
+          <rect x="90" y="176" width="58" height="46" stroke-width="1.5"/>
+          <line x1="119" y1="176" x2="119" y2="222" stroke-width="1"/>
+          <line x1="90"  y1="199" x2="148" y2="199" stroke-width="1"/>
+          <!-- Right window -->
+          <rect x="272" y="176" width="58" height="46" stroke-width="1.5"/>
+          <line x1="301" y1="176" x2="301" y2="222" stroke-width="1"/>
+          <line x1="272" y1="199" x2="330" y2="199" stroke-width="1"/>
+          <!-- Ground -->
+          <line x1="20" y1="296" x2="400" y2="296" stroke-width="1"/>
+          <!-- Path -->
+          <path d="M174 296 L155 296" stroke-width="1.5"/>
+          <path d="M226 296 L265 296" stroke-width="1.5"/>
+          <!-- Left shrub -->
+          <line x1="50" y1="296" x2="50" y2="270" stroke-width="1.5"/>
+          <ellipse cx="50" cy="266" rx="13" ry="9" stroke-width="1.5"/>
+          <!-- Right shrub -->
+          <line x1="370" y1="296" x2="370" y2="270" stroke-width="1.5"/>
+          <ellipse cx="370" cy="266" rx="13" ry="9" stroke-width="1.5"/>
+        </g>
+        <!-- Clay accent cross above peak -->
+        <g stroke="#B86348" stroke-width="1.5" stroke-linecap="round">
+          <line x1="210" y1="22" x2="210" y2="34"/>
+          <line x1="204" y1="28" x2="216" y2="28"/>
+        </g>
+        <!-- Location pin -->
+        <g transform="translate(188,52)" stroke="#243D30" stroke-width="1.5" fill="none">
+          <path d="M11,0 C17,0 22,5.5 22,12 C22,20 11,30 11,30 C11,30 0,20 0,12 C0,5.5 5,0 11,0Z"/>
+          <circle cx="11" cy="12" r="3.5"/>
+        </g>
+        <text x="220" y="69" font-family="Jost,sans-serif" font-size="8.5" fill="#243D30" font-weight="500" letter-spacing="1.5">LYNNWOOD, WA</text>
+      </svg>
+    </div>
+    <div class="hero-stat-panel">
+      <div class="hero-stat-item">
+        <div class="stat-val"><span>&le;</span>&thinsp;6</div>
+        <div class="stat-label">Residents per home</div>
+      </div>
+      <div class="hero-stat-item">
+        <div class="stat-val">24<span>/7</span></div>
+        <div class="stat-label">On-site supervision</div>
+      </div>
+      <div class="hero-stat-item">
+        <div class="stat-val"><span>&#9733;</span>&thinsp;5.0</div>
+        <div class="stat-label">Google rating</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- PILLARS -->
+<div class="pillars-bar">
+  <div class="pillar">
+    <div class="pillar-icon-wrap">
+      <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="rgba(255,255,255,0.45)" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+    </div>
+    <div class="pillar-num">WA<sup>&nbsp;&#10003;</sup></div>
+    <div class="pillar-label">State Licensed<br/>DSHS Regulated</div>
+  </div>
+  <div class="pillar">
+    <div class="pillar-icon-wrap">
+      <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="rgba(255,255,255,0.45)" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M3 9l9-7 9 7v11a2 2 0 01-2 2H5a2 2 0 01-2-2z"/><polyline points="9 22 9 12 15 12 15 22"/></svg>
+    </div>
+    <div class="pillar-num">&le;&thinsp;6</div>
+    <div class="pillar-label">Residents per home&mdash;<br/>truly individual care</div>
+  </div>
+  <div class="pillar">
+    <div class="pillar-icon-wrap">
+      <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="rgba(255,255,255,0.45)" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+    </div>
+    <div class="pillar-num">24/7</div>
+    <div class="pillar-label">On-site caregiver<br/>around the clock</div>
+  </div>
+  <div class="pillar">
+    <div class="pillar-icon-wrap">
+      <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="rgba(255,255,255,0.45)" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+    </div>
+    <div class="pillar-num">5.0</div>
+    <div class="pillar-label">Google rating&mdash;<br/>1st &amp; Amazing AFH</div>
+  </div>
+</div>
+
+<!-- WHY AFH -->
+<section class="afh-explainer" id="why-afh">
+  <div class="explainer-left">
+    <div class="section-kicker">Why an Adult Family Home?</div>
+    <h2 class="section-headline">The difference a real home makes</h2>
+    <p class="section-body">An Adult Family Home is a state-licensed private residence&mdash;not an institution&mdash;where a small group of residents receive hands-on, personalized care. It is the closest alternative to having a dedicated caregiver in your loved one&rsquo;s own home.</p>
+    <table class="compare-table">
+      <thead>
+        <tr>
+          <th class="th-afh">Adult Family Home</th>
+          <th class="th-fac">Large Facility</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td class="td-afh">
+            <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="#243D30" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" style="vertical-align:middle;margin-right:8px"><polyline points="20 6 9 17 4 12"/></svg>Up to 6 residents
+          </td>
+          <td class="td-fac">Dozens to hundreds</td>
+        </tr>
+        <tr>
+          <td class="td-afh"><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="#243D30" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" style="vertical-align:middle;margin-right:8px"><polyline points="20 6 9 17 4 12"/></svg>Individual care plans</td>
+          <td class="td-fac">Standardized routines</td>
+        </tr>
+        <tr>
+          <td class="td-afh"><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="#243D30" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" style="vertical-align:middle;margin-right:8px"><polyline points="20 6 9 17 4 12"/></svg>Home-cooked meals daily</td>
+          <td class="td-fac">Cafeteria-style dining</td>
+        </tr>
+        <tr>
+          <td class="td-afh"><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="#243D30" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" style="vertical-align:middle;margin-right:8px"><polyline points="20 6 9 17 4 12"/></svg>Staff know every resident</td>
+          <td class="td-fac">High staff turnover</td>
+        </tr>
+        <tr>
+          <td class="td-afh"><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="#243D30" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" style="vertical-align:middle;margin-right:8px"><polyline points="20 6 9 17 4 12"/></svg>Quiet residential setting</td>
+          <td class="td-fac">Institutional environment</td>
+        </tr>
+        <tr>
+          <td class="td-afh"><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="#243D30" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" style="vertical-align:middle;margin-right:8px"><polyline points="20 6 9 17 4 12"/></svg>State inspected &amp; licensed</td>
+          <td class="td-fac">Varies by operator</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+
+  <div class="explainer-right">
+    <div class="section-kicker">What sets us apart</div>
+    <h2 class="section-headline">Built on trust,<br/>sustained by care</h2>
+    <div class="feature-rows">
+      <div class="feature-row">
+        <div class="feature-icon-wrap">
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#243D30" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M3 9l9-7 9 7v11a2 2 0 01-2 2H5a2 2 0 01-2-2z"/><polyline points="9 22 9 12 15 12 15 22"/></svg>
+        </div>
+        <div>
+          <div class="feature-title">A real home, not a ward</div>
+          <div class="feature-desc">Your loved one lives in an actual residential home in a Lynnwood neighborhood&mdash;with the calm and comfort that comes with it.</div>
+        </div>
+      </div>
+      <div class="feature-row">
+        <div class="feature-icon-wrap">
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#243D30" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M17 21v-2a4 4 0 00-4-4H5a4 4 0 00-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 00-3-3.87"/><path d="M16 3.13a4 4 0 010 7.75"/></svg>
+        </div>
+        <div>
+          <div class="feature-title">Caregivers who truly know them</div>
+          <div class="feature-desc">With at most six residents, our caregivers learn every person&rsquo;s preferences, routines, and needs&mdash;not just their care plan.</div>
+        </div>
+      </div>
+      <div class="feature-row">
+        <div class="feature-icon-wrap">
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#243D30" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M14 2H6a2 2 0 00-2 2v16a2 2 0 002 2h12a2 2 0 002-2V8z"/><polyline points="14 2 14 8 20 8"/><line x1="16" y1="13" x2="8" y2="13"/><line x1="16" y1="17" x2="8" y2="17"/></svg>
+        </div>
+        <div>
+          <div class="feature-title">Washington State licensed</div>
+          <div class="feature-desc">Both homes are licensed and regularly inspected by the Washington State Department of Social &amp; Health Services (DSHS).</div>
+        </div>
+      </div>
+      <div class="feature-row">
+        <div class="feature-icon-wrap">
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#243D30" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M20.84 4.61a5.5 5.5 0 00-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 00-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 000-7.78z"/></svg>
+        </div>
+        <div>
+          <div class="feature-title">Family always welcome</div>
+          <div class="feature-desc">We keep families close&mdash;open communication, regular updates, and a warm welcome whenever you visit.</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- OUR TWO HOMES -->
+<section class="our-homes" id="our-homes">
+  <div class="our-homes-header">
+    <div class="section-kicker">Two Homes, One Standard of Care</div>
+    <h2 class="section-headline">Both located in Lynnwood, Washington</h2>
+  </div>
+  <div class="homes-grid">
+
+    <div class="home-profile home-a">
+      <div class="home-profile-top">
+        <div class="home-profile-tag">1st &amp; Amazing AFH LLC</div>
+        <div class="home-profile-name">1st &amp; Amazing<br/>Adult Family Home</div>
+        <div class="home-profile-meta">
+          <div class="meta-item">
+            <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07A19.5 19.5 0 013.07 9.81a19.79 19.79 0 01-3.07-8.68A2 2 0 012.18 1h3a2 2 0 012 1.72c.127.96.361 1.903.7 2.81a2 2 0 01-.45 2.11L6.91 8.16a16 16 0 006.93 6.93l1.52-1.52a2 2 0 012.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0122 16.92z"/></svg>
+            (206) 446-4472
+          </div>
+          <div class="meta-item">
+            <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+            5.0 Google Rating
+          </div>
+        </div>
+      </div>
+      <div class="home-profile-body">
+        <div class="services-label">Services Provided</div>
+        <ul class="services-list">
+          <li><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="#243D30" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>24-hour on-site supervision</li>
+          <li><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="#243D30" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>Personal care &mdash; bathing, dressing, grooming</li>
+          <li><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="#243D30" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>Medication administration</li>
+          <li><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="#243D30" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>Meal preparation &amp; housekeeping</li>
+          <li><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="#243D30" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>Mobility &amp; transfer assistance</li>
+          <li><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="#243D30" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>Dementia &amp; Alzheimer&rsquo;s care</li>
+          <li><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="#243D30" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>Companionship &amp; social engagement</li>
+        </ul>
+        <a href="tel:2064464472" class="btn-home">
+          <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07A19.5 19.5 0 013.07 9.81a19.79 19.79 0 01-3.07-8.68A2 2 0 012.18 1h3a2 2 0 012 1.72c.127.96.361 1.903.7 2.81a2 2 0 01-.45 2.11L6.91 8.16a16 16 0 006.93 6.93l1.52-1.52a2 2 0 012.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0122 16.92z"/></svg>
+          Call to Inquire
+        </a>
+      </div>
+    </div>
+
+    <div class="home-profile home-b">
+      <div class="home-profile-top">
+        <div class="home-profile-tag">New Flower AFH LLC</div>
+        <div class="home-profile-name">New Flower<br/>Adult Family Home</div>
+        <div class="home-profile-meta">
+          <div class="meta-item">
+            <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07A19.5 19.5 0 013.07 9.81a19.79 19.79 0 01-3.07-8.68A2 2 0 012.18 1h3a2 2 0 012 1.72c.127.96.361 1.903.7 2.81a2 2 0 01-.45 2.11L6.91 8.16a16 16 0 006.93 6.93l1.52-1.52a2 2 0 012.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0122 16.92z"/></svg>
+            (832) 492-5521
+          </div>
+          <div class="meta-item">
+            <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/></svg>
+            Est. May 2023 &middot; Lynnwood
+          </div>
+        </div>
+      </div>
+      <div class="home-profile-body">
+        <div class="services-label">Services Provided</div>
+        <ul class="services-list">
+          <li><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="#B86348" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>24-hour residential care</li>
+          <li><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="#B86348" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>Activities of daily living (ADL) support</li>
+          <li><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="#B86348" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>Medication management</li>
+          <li><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="#B86348" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>Memory &amp; cognitive care</li>
+          <li><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="#B86348" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>Hospice &amp; respite care support</li>
+          <li><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="#B86348" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>Long-term care placement</li>
+          <li><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="#B86348" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>Meals, housekeeping &amp; transportation</li>
+        </ul>
+        <a href="tel:8324925521" class="btn-home">
+          <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07A19.5 19.5 0 013.07 9.81a19.79 19.79 0 01-3.07-8.68A2 2 0 012.18 1h3a2 2 0 012 1.72c.127.96.361 1.903.7 2.81a2 2 0 01-.45 2.11L6.91 8.16a16 16 0 006.93 6.93l1.52-1.52a2 2 0 012.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0122 16.92z"/></svg>
+          Call to Inquire
+        </a>
+      </div>
+    </div>
+  </div>
+
+  <div class="license-strip">
+    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#243D30" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+    <div class="license-text">Both homes are active Washington State LLCs, licensed and regularly inspected by the Washington State Department of Social &amp; Health Services (DSHS). Located in Lynnwood, Washington.</div>
+  </div>
+</section>
+
+<!-- SERVICES -->
+<section class="services-section" id="services">
+  <div class="services-header-grid">
+    <div>
+      <div class="section-kicker">What We Provide</div>
+      <h2 class="section-headline">Comprehensive care under one roof</h2>
+    </div>
+    <p class="section-body">Both homes offer a full spectrum of support services, each tailored to the individual resident&rsquo;s care plan and adjusted as needs evolve over time.</p>
+  </div>
+  <div class="services-grid">
+
+    <div class="service-tile">
+      <div class="tile-icon-wrap">
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#243D30" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M20 21v-2a4 4 0 00-4-4H8a4 4 0 00-4 4v2"/><circle cx="12" cy="7" r="4"/></svg>
+      </div>
+      <div class="tile-name">Personal Care</div>
+      <p class="tile-desc">Bathing, dressing, grooming, and hygiene provided with dignity and attentiveness.</p>
+    </div>
+
+    <div class="service-tile">
+      <div class="tile-icon-wrap">
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#243D30" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="7" height="7"/><rect x="14" y="3" width="7" height="7"/><rect x="14" y="14" width="7" height="7"/><rect x="3" y="14" width="7" height="7"/></svg>
+      </div>
+      <div class="tile-name">Medication Management</div>
+      <p class="tile-desc">Accurate administration, scheduling, and coordination with prescribing physicians.</p>
+    </div>
+
+    <div class="service-tile">
+      <div class="tile-icon-wrap">
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#243D30" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M2 3h6a4 4 0 014 4v14a3 3 0 00-3-3H2z"/><path d="M22 3h-6a4 4 0 00-4 4v14a3 3 0 013-3h7z"/></svg>
+      </div>
+      <div class="tile-name">Memory Care</div>
+      <p class="tile-desc">Structured, stimulating routines for residents living with Alzheimer&rsquo;s or dementia.</p>
+    </div>
+
+    <div class="service-tile">
+      <div class="tile-icon-wrap">
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#243D30" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M3 2v7c0 1.1.9 2 2 2h4a2 2 0 002-2V2"/><path d="M7 2v20"/><path d="M21 15V2a5 5 0 00-5 5v6c0 1.1.9 2 2 2h3zm0 0v7"/></svg>
+      </div>
+      <div class="tile-name">Meal Preparation</div>
+      <p class="tile-desc">Home-cooked, diet-appropriate meals prepared fresh daily in a real kitchen.</p>
+    </div>
+
+    <div class="service-tile">
+      <div class="tile-icon-wrap">
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#243D30" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="5" r="3"/><line x1="12" y1="8" x2="12" y2="14"/><path d="M8 18l4-4 4 4"/><line x1="12" y1="14" x2="12" y2="21"/></svg>
+      </div>
+      <div class="tile-name">Mobility Assistance</div>
+      <p class="tile-desc">Transfer support, fall prevention, and exercise guidance to maintain independence.</p>
+    </div>
+
+    <div class="service-tile">
+      <div class="tile-icon-wrap">
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#243D30" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="23 4 23 10 17 10"/><path d="M20.49 15a9 9 0 11-2.12-9.36L23 10"/></svg>
+      </div>
+      <div class="tile-name">Respite Care</div>
+      <p class="tile-desc">Short-term placement so family caregivers can rest, without disrupting routines.</p>
+    </div>
+
+    <div class="service-tile">
+      <div class="tile-icon-wrap">
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#243D30" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M20.84 4.61a5.5 5.5 0 00-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 00-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 000-7.78z"/></svg>
+      </div>
+      <div class="tile-name">Hospice Support</div>
+      <p class="tile-desc">Compassionate end-of-life care coordination alongside your hospice provider.</p>
+    </div>
+
+    <div class="service-tile">
+      <div class="tile-icon-wrap">
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#243D30" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M3 9l9-7 9 7v11a2 2 0 01-2 2H5a2 2 0 01-2-2z"/><polyline points="9 22 9 12 15 12 15 22"/></svg>
+      </div>
+      <div class="tile-name">Housekeeping</div>
+      <p class="tile-desc">Laundry, cleaning, and home upkeep so every resident lives in a clean, calm environment.</p>
+    </div>
+
+  </div>
+</section>
+
+<!-- TESTIMONIAL -->
+<section class="testimonial-section">
+  <div>
+    <div class="test-kicker">What Families Say</div>
+    <h2 class="test-left-headline">Trusted by families across the Lynnwood area</h2>
+  </div>
+  <div>
+    <div class="star-row">
+      <svg width="16" height="16" viewBox="0 0 24 24" fill="#A8895C" stroke="none"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+      <svg width="16" height="16" viewBox="0 0 24 24" fill="#A8895C" stroke="none"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+      <svg width="16" height="16" viewBox="0 0 24 24" fill="#A8895C" stroke="none"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+      <svg width="16" height="16" viewBox="0 0 24 24" fill="#A8895C" stroke="none"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+      <svg width="16" height="16" viewBox="0 0 24 24" fill="#A8895C" stroke="none"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+    </div>
+    <p class="test-quote">&ldquo;From the moment we walked in, it felt like a home&mdash;not a facility. The caregivers knew my mother&rsquo;s name, her favorite music, her schedule. Our family finally stopped worrying.&rdquo;</p>
+    <div class="test-author">
+      <div class="author-initial">F</div>
+      <div>
+        <div class="author-name">Family of a 1st &amp; Amazing resident</div>
+        <div class="author-role">Lynnwood, WA &middot; 5-star Google review</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- CONTACT -->
+<section class="contact-section" id="contact">
+  <div class="contact-left">
+    <div class="section-kicker">Get in Touch</div>
+    <h2>Ready to find your loved one a <em>real home?</em></h2>
+    <p class="contact-sub">Tours are always welcome. No pressure&mdash;just an honest conversation about what your loved one needs and how we can help.</p>
+    <div class="contact-btn-group">
+      <a href="tel:2064464472" class="btn-contact btn-contact-a">
+        <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07A19.5 19.5 0 013.07 9.81a19.79 19.79 0 01-3.07-8.68A2 2 0 012.18 1h3a2 2 0 012 1.72c.127.96.361 1.903.7 2.81a2 2 0 01-.45 2.11L6.91 8.16a16 16 0 006.93 6.93l1.52-1.52a2 2 0 012.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0122 16.92z"/></svg>
+        Call 1st &amp; Amazing
+      </a>
+      <a href="tel:8324925521" class="btn-contact btn-contact-b">
+        <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07A19.5 19.5 0 013.07 9.81a19.79 19.79 0 01-3.07-8.68A2 2 0 012.18 1h3a2 2 0 012 1.72c.127.96.361 1.903.7 2.81a2 2 0 01-.45 2.11L6.91 8.16a16 16 0 006.93 6.93l1.52-1.52a2 2 0 012.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0122 16.92z"/></svg>
+        Call New Flower
+      </a>
+    </div>
+  </div>
+
+  <div class="contact-cards">
+    <div class="contact-card">
+      <div class="cc-icon">
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#243D30" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M3 9l9-7 9 7v11a2 2 0 01-2 2H5a2 2 0 01-2-2z"/><polyline points="9 22 9 12 15 12 15 22"/></svg>
+      </div>
+      <div>
+        <div class="cc-label">1st &amp; Amazing AFH LLC</div>
+        <div class="cc-name">1st &amp; Amazing Adult Family Home</div>
+        <div class="cc-phone">(206) 446-4472</div>
+        <div class="cc-city">Lynnwood, Washington &middot; 5.0 Google Rating</div>
+      </div>
+    </div>
+    <div class="contact-card">
+      <div class="cc-icon">
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#243D30" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M3 9l9-7 9 7v11a2 2 0 01-2 2H5a2 2 0 01-2-2z"/><polyline points="9 22 9 12 15 12 15 22"/></svg>
+      </div>
+      <div>
+        <div class="cc-label">New Flower AFH LLC</div>
+        <div class="cc-name">New Flower Adult Family Home</div>
+        <div class="cc-phone">(832) 492-5521</div>
+        <div class="cc-city">Lynnwood, Washington &middot; Est. May 2023</div>
+      </div>
+    </div>
+    <div class="contact-card">
+      <div class="cc-icon">
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#243D30" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/></svg>
+      </div>
+      <div>
+        <div class="cc-label">Location</div>
+        <div class="cc-name">Lynnwood, Washington</div>
+        <div class="cc-city">Washington State DSHS Licensed Adult Family Homes</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer>
+  <div class="footer-top">
+    <div>
+      <div class="footer-brand-name">1st &amp; Amazing &middot; <span>New Flower</span></div>
+      <p class="footer-desc">Two state-licensed Adult Family Homes providing compassionate, 24-hour residential care for seniors and adults with disabilities in Lynnwood, Washington.</p>
+    </div>
+    <div>
+      <div class="footer-col-title">Our Homes</div>
+      <ul class="footer-links">
+        <li><a href="tel:2064464472">1st &amp; Amazing AFH</a></li>
+        <li><a href="tel:8324925521">New Flower AFH</a></li>
+        <li><a href="#our-homes">Compare Homes</a></li>
+      </ul>
+    </div>
+    <div>
+      <div class="footer-col-title">Information</div>
+      <ul class="footer-links">
+        <li><a href="#why-afh">What is an AFH?</a></li>
+        <li><a href="#services">Services</a></li>
+        <li><a href="#contact">Schedule a Tour</a></li>
+        <li><a href="https://www.dshs.wa.gov" target="_blank" rel="noopener">WA DSHS</a></li>
+      </ul>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <div>&copy; 2026 1st &amp; Amazing AFH LLC &amp; New Flower AFH LLC &nbsp;&middot;&nbsp; Lynnwood, Washington</div>
+    <div class="footer-badges">
+      <div class="f-badge">WA Licensed</div>
+      <div class="f-badge">DSHS Regulated</div>
+      <div class="f-badge">24/7 Care</div>
+    </div>
+  </div>
+</footer>
+
+</body>
+</html>

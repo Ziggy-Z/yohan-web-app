@@ -1,0 +1,626 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <script>
+    // html has scroll-behavior:smooth, which browsers also apply to the native
+    // jump-to-URL-fragment on load -- without this it visibly animates the
+    // whole way down instead of landing there instantly. Switch back to smooth
+    // once that initial jump (if any) has happened, so in-page nav clicks
+    // still scroll smoothly.
+    if (location.hash) {
+      document.documentElement.style.scrollBehavior = 'auto';
+      window.addEventListener('load', function () {
+        setTimeout(function () {
+          document.documentElement.style.scrollBehavior = '';
+        }, 0);
+      });
+    }
+  </script>
+  <title>1st &amp; Amazing &middot; New Flower | Adult Family Homes &mdash; Lynnwood, WA</title>
+  <meta name="description" content="State-licensed Adult Family Homes in Lynnwood, WA. 1st &amp; Amazing and New Flower provide personalized, 24-hour residential care for seniors and adults with disabilities, in a real home with no more than six residents." />
+  <meta name="theme-color" content="#243D30" />
+  <link rel="icon" type="image/svg+xml" href="/assets/favicon.svg" />
+
+  <meta property="og:type" content="website" />
+  <meta property="og:site_name" content="1st &amp; Amazing &middot; New Flower Adult Family Homes" />
+  <meta property="og:title" content="1st &amp; Amazing &middot; New Flower | Adult Family Homes in Lynnwood, WA" />
+  <meta property="og:description" content="State-licensed Adult Family Homes in Lynnwood, WA providing personalized, 24-hour residential care for seniors and adults with disabilities." />
+  <meta name="twitter:card" content="summary" />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,600;0,700;1,400;1,600&family=Jost:wght@300;400;500;600&display=swap" rel="stylesheet" />
+
+  <link rel="stylesheet" href="/css/styles.css" />
+</head>
+<body>
+
+<a class="skip-link" href="#main-content">Skip to main content</a>
+
+<!-- Shared icon definitions, referenced via <use> to avoid repeating markup. -->
+<svg aria-hidden="true" focusable="false" style="position:absolute; width:0; height:0; overflow:hidden;">
+  <symbol id="icon-check" viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12"/></symbol>
+  <symbol id="icon-phone" viewBox="0 0 24 24"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07A19.5 19.5 0 013.07 9.81a19.79 19.79 0 01-3.07-8.68A2 2 0 012.18 1h3a2 2 0 012 1.72c.127.96.361 1.903.7 2.81a2 2 0 01-.45 2.11L6.91 8.16a16 16 0 006.93 6.93l1.52-1.52a2 2 0 012.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0122 16.92z"/></symbol>
+  <symbol id="icon-star" viewBox="0 0 24 24"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></symbol>
+  <symbol id="icon-house" viewBox="0 0 24 24"><path d="M3 9l9-7 9 7v11a2 2 0 01-2 2H5a2 2 0 01-2-2z"/><polyline points="9 22 9 12 15 12 15 22"/></symbol>
+  <symbol id="icon-pin" viewBox="0 0 24 24"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/></symbol>
+  <symbol id="icon-shield" viewBox="0 0 24 24"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></symbol>
+</svg>
+
+<!-- NAV -->
+<nav>
+  <a href="#main-content" class="nav-brand">
+    <div class="brand-mark" aria-hidden="true">
+      <div class="brand-mark-line"></div>
+      <div class="brand-mark-line"></div>
+    </div>
+    <div class="brand-text">
+      <span class="brand-text-top">1st &amp; Amazing &middot; New Flower</span>
+      <span class="brand-text-sub">Adult Family Homes &mdash; Lynnwood, WA</span>
+    </div>
+  </a>
+  <ul class="nav-links" id="primary-navigation">
+    <li><a href="#why-afh">Why AFH?</a></li>
+    <li><a href="#our-homes">Our Homes</a></li>
+    <li><a href="#services">Services</a></li>
+    <li><a href="#contact">Contact</a></li>
+  </ul>
+  <div class="nav-right">
+    <a href="#contact" class="nav-cta">Schedule a Tour</a>
+    <button type="button" class="nav-toggle" aria-expanded="false" aria-controls="primary-navigation" aria-label="Toggle navigation menu">
+      <span class="nav-toggle-icon"></span>
+    </button>
+  </div>
+</nav>
+
+<main id="main-content">
+
+  <!-- HERO -->
+  <section class="hero">
+    <div class="hero-left">
+      <div class="hero-homes-label">
+        <span class="home-tag home-tag-a">1st &amp; Amazing AFH</span>
+        <div class="homes-label-div" aria-hidden="true"></div>
+        <span class="home-tag home-tag-b">New Flower AFH</span>
+      </div>
+      <h1 class="hero-headline">A real home.<br/><em>Real care.</em><br/>Real family.</h1>
+      <div class="hero-rule" aria-hidden="true"></div>
+      <p class="hero-sub">Our state-licensed Adult Family Homes in Lynnwood, WA provide seniors and adults with disabilities personalized, 24-hour care in a genuine residential setting &mdash; never an institution.</p>
+      <div class="hero-actions">
+        <a href="#contact" class="btn-primary">
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
+          Schedule a Tour
+        </a>
+        <div class="hero-phones">
+          <a href="tel:2064464472" class="phone-link phone-link-a">
+            <span class="phone-label">1st &amp; Amazing</span>
+            <span class="phone-num">(206) 446-4472</span>
+          </a>
+          <div class="phone-div" aria-hidden="true"></div>
+          <a href="tel:8324925521" class="phone-link phone-link-b">
+            <span class="phone-label">New Flower</span>
+            <span class="phone-num">(832) 492-5521</span>
+          </a>
+        </div>
+      </div>
+    </div>
+
+    <div class="hero-right">
+      <div class="hero-illustration">
+        <svg viewBox="0 0 420 300" width="380" xmlns="http://www.w3.org/2000/svg" fill="none" style="position:relative;z-index:1;visibility:hidden;" aria-hidden="true">
+          <g stroke="#243D30" stroke-linecap="round" stroke-linejoin="round">
+            <!-- Roofline -->
+            <polyline class="draw" data-draw-stage="roof" points="40,148 210,44 380,148" stroke-width="2"/>
+            <!-- Chimney, clipped to the roof slope so it reads as emerging from behind it -->
+            <path class="draw" data-draw-stage="chimney" d="M282,64 L310,64 L310,105.2 L282,88.1 Z" stroke-width="1.5"/>
+            <!-- Walls -->
+            <rect class="draw" data-draw-stage="walls" x="60" y="148" width="300" height="148" stroke-width="1.5"/>
+
+            <!-- Left window -->
+            <g class="window window-left">
+              <rect class="window-glow" x="90" y="176" width="58" height="46" fill="#F5C989" opacity="0.1" pointer-events="none"/>
+              <rect class="window-glow-hover" x="90" y="176" width="58" height="46" fill="#F5C989" opacity="0" pointer-events="none"/>
+              <rect class="draw" data-draw-stage="window-l" x="90" y="176" width="58" height="46" stroke-width="1.5" pointer-events="none"/>
+              <line class="draw" data-draw-stage="window-l" x1="119" y1="176" x2="119" y2="222" stroke-width="1" pointer-events="none"/>
+              <line class="draw" data-draw-stage="window-l" x1="90"  y1="199" x2="148" y2="199" stroke-width="1" pointer-events="none"/>
+              <rect class="window-hit" x="90" y="176" width="58" height="46" fill="transparent"/>
+            </g>
+
+            <!-- Right window -->
+            <g class="window window-right">
+              <rect class="window-glow" x="272" y="176" width="58" height="46" fill="#F5C989" opacity="0.1" pointer-events="none"/>
+              <rect class="window-glow-hover" x="272" y="176" width="58" height="46" fill="#F5C989" opacity="0" pointer-events="none"/>
+              <rect class="draw" data-draw-stage="window-r" x="272" y="176" width="58" height="46" stroke-width="1.5" pointer-events="none"/>
+              <line class="draw" data-draw-stage="window-r" x1="301" y1="176" x2="301" y2="222" stroke-width="1" pointer-events="none"/>
+              <line class="draw" data-draw-stage="window-r" x1="272" y1="199" x2="330" y2="199" stroke-width="1" pointer-events="none"/>
+              <rect class="window-hit" x="272" y="176" width="58" height="46" fill="transparent"/>
+            </g>
+
+            <!-- Front door -->
+            <g class="door-group">
+              <rect class="draw" data-draw-stage="door" x="174" y="208" width="52" height="88" rx="26" stroke-width="1.5" pointer-events="none"/>
+              <circle class="door-handle-glow" cx="220" cy="255" r="7" fill="#F5C989" opacity="0" pointer-events="none"/>
+              <circle class="draw-fade" data-draw-stage="door-dot" cx="220" cy="255" r="3" stroke-width="1.5" fill="#243D30" pointer-events="none"/>
+              <rect class="door-hit" x="174" y="208" width="52" height="88" rx="26" fill="transparent"/>
+            </g>
+
+            <!-- Ground -->
+            <line class="draw" data-draw-stage="ground" x1="20" y1="296" x2="400" y2="296" stroke-width="1"/>
+            <!-- Path -->
+            <path class="draw" data-draw-stage="ground" d="M174 296 L155 296" stroke-width="1.5"/>
+            <path class="draw" data-draw-stage="ground" d="M226 296 L265 296" stroke-width="1.5"/>
+
+            <!-- Left shrub -->
+            <g class="tree tree-left">
+              <line class="draw" data-draw-stage="tree-l" x1="50" y1="296" x2="50" y2="270" stroke-width="1.5"/>
+              <circle class="draw" data-draw-stage="tree-l" cx="50" cy="266" r="9" stroke-width="1.5"/>
+              <circle class="draw" data-draw-stage="tree-l" cx="43" cy="262" r="6.5" stroke-width="1.5"/>
+              <circle class="draw" data-draw-stage="tree-l" cx="58" cy="261" r="6.5" stroke-width="1.5"/>
+            </g>
+            <!-- Right shrub -->
+            <g class="tree tree-right">
+              <line class="draw" data-draw-stage="tree-r" x1="370" y1="296" x2="370" y2="270" stroke-width="1.5"/>
+              <circle class="draw" data-draw-stage="tree-r" cx="370" cy="266" r="9" stroke-width="1.5"/>
+              <circle class="draw" data-draw-stage="tree-r" cx="363" cy="262" r="6.5" stroke-width="1.5"/>
+              <circle class="draw" data-draw-stage="tree-r" cx="378" cy="261" r="6.5" stroke-width="1.5"/>
+            </g>
+          </g>
+
+          <!-- Location pin, drops in above the roof peak once the house has drawn -->
+          <g transform="translate(199,8)">
+            <g class="pin-drop">
+              <circle class="map-pin-ping" cx="11" cy="30" r="3" stroke="#B86348" stroke-width="1.5" fill="none"/>
+              <g class="map-pin" stroke="#243D30" stroke-width="1.5" fill="none">
+                <path d="M11,0 C17,0 22,5.5 22,12 C22,20 11,30 11,30 C11,30 0,20 0,12 C0,5.5 5,0 11,0Z"/>
+                <circle cx="11" cy="12" r="3.5"/>
+              </g>
+            </g>
+          </g>
+          <text class="pin-label" x="230" y="23" font-family="Jost,sans-serif" font-size="8.5" fill="#243D30" font-weight="500" letter-spacing="1.5">LYNNWOOD, WA</text>
+        </svg>
+        <script>
+          (function () {
+            var illustration = document.currentScript.previousElementSibling;
+            if (!illustration) return;
+            var canAnimate = !window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+            var drawEls = illustration.querySelectorAll('.draw');
+            canAnimate = canAnimate && drawEls.length && typeof drawEls[0].getTotalLength === 'function';
+            if (canAnimate) {
+              drawEls.forEach(function (el) {
+                // +1 avoids a hairline rendering seam on closed shapes (circles,
+                // rects) where dasharray/dashoffset exactly equal the path length.
+                var length = el.getTotalLength() + 1;
+                el.style.strokeDasharray = length;
+                el.style.strokeDashoffset = length;
+              });
+            }
+            // Reveal only now that hidden strokes (if any) are already set, so
+            // there is no frame where the fully-drawn house flashes visible.
+            illustration.style.visibility = 'visible';
+            if (canAnimate) {
+              requestAnimationFrame(function () {
+                illustration.classList.add('is-drawing');
+              });
+            }
+          })();
+        </script>
+        <noscript><style>.hero-illustration svg { visibility: visible !important; }</style></noscript>
+      </div>
+      <div class="hero-stat-panel">
+        <div class="hero-stat-item">
+          <div class="stat-val"><span>&le;</span>&thinsp;6</div>
+          <div class="stat-label">Residents per home</div>
+        </div>
+        <div class="hero-stat-item">
+          <div class="stat-val">24<span>/7</span></div>
+          <div class="stat-label">On-site supervision</div>
+        </div>
+        <div class="hero-stat-item">
+          <div class="stat-val"><span>&#9733;</span>&thinsp;5.0</div>
+          <div class="stat-label">Google rating</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- PILLARS -->
+  <div class="pillars-bar">
+    <div class="pillar">
+      <div class="pillar-icon-wrap">
+        <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="rgba(255,255,255,0.45)" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><use href="#icon-shield"/></svg>
+      </div>
+      <div class="pillar-num">WA<sup>&nbsp;&#10003;</sup></div>
+      <div class="pillar-label">State Licensed<br/>DSHS Regulated</div>
+    </div>
+    <div class="pillar">
+      <div class="pillar-icon-wrap">
+        <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="rgba(255,255,255,0.45)" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><use href="#icon-house"/></svg>
+      </div>
+      <div class="pillar-num">&le;&thinsp;6</div>
+      <div class="pillar-label">Residents per home&mdash;<br/>truly individual care</div>
+    </div>
+    <div class="pillar">
+      <div class="pillar-icon-wrap">
+        <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="rgba(255,255,255,0.45)" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+      </div>
+      <div class="pillar-num">24/7</div>
+      <div class="pillar-label">On-site caregiver<br/>around the clock</div>
+    </div>
+    <div class="pillar">
+      <div class="pillar-icon-wrap">
+        <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="rgba(255,255,255,0.45)" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><use href="#icon-star"/></svg>
+      </div>
+      <div class="pillar-num">5.0</div>
+      <div class="pillar-label">Google rating&mdash;<br/>1st &amp; Amazing AFH</div>
+    </div>
+  </div>
+
+  <!-- WHY AFH -->
+  <section class="afh-explainer" id="why-afh" aria-labelledby="why-afh-heading">
+    <div class="explainer-left">
+      <div class="section-kicker">Why an Adult Family Home?</div>
+      <h2 class="section-headline" id="why-afh-heading">The difference a real home makes</h2>
+      <p class="section-body">An Adult Family Home is a state-licensed private residence&mdash;not an institution&mdash;where a small group of residents receive hands-on, personalized care. It is the closest alternative to having a dedicated caregiver in your loved one&rsquo;s own home.</p>
+      <table class="compare-table">
+        <caption class="sr-only">Comparison between an Adult Family Home and a large facility</caption>
+        <thead>
+          <tr>
+            <th class="th-afh" scope="col">Adult Family Home</th>
+            <th class="th-fac" scope="col">Large Facility</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td class="td-afh">
+              <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="#243D30" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" style="vertical-align:middle;margin-right:8px" aria-hidden="true"><use href="#icon-check"/></svg>Up to 6 residents
+            </td>
+            <td class="td-fac">Dozens to hundreds</td>
+          </tr>
+          <tr>
+            <td class="td-afh"><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="#243D30" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" style="vertical-align:middle;margin-right:8px" aria-hidden="true"><use href="#icon-check"/></svg>Individual care plans</td>
+            <td class="td-fac">Standardized routines</td>
+          </tr>
+          <tr>
+            <td class="td-afh"><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="#243D30" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" style="vertical-align:middle;margin-right:8px" aria-hidden="true"><use href="#icon-check"/></svg>Home-cooked meals daily</td>
+            <td class="td-fac">Cafeteria-style dining</td>
+          </tr>
+          <tr>
+            <td class="td-afh"><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="#243D30" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" style="vertical-align:middle;margin-right:8px" aria-hidden="true"><use href="#icon-check"/></svg>Staff know every resident</td>
+            <td class="td-fac">High staff turnover</td>
+          </tr>
+          <tr>
+            <td class="td-afh"><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="#243D30" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" style="vertical-align:middle;margin-right:8px" aria-hidden="true"><use href="#icon-check"/></svg>Quiet residential setting</td>
+            <td class="td-fac">Institutional environment</td>
+          </tr>
+          <tr>
+            <td class="td-afh"><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="#243D30" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" style="vertical-align:middle;margin-right:8px" aria-hidden="true"><use href="#icon-check"/></svg>State inspected &amp; licensed</td>
+            <td class="td-fac">Varies by operator</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+
+    <div class="explainer-right">
+      <div class="section-kicker">What sets us apart</div>
+      <h2 class="section-headline">Built on trust,<br/>sustained by care</h2>
+      <div class="feature-rows">
+        <div class="feature-row">
+          <div class="feature-icon-wrap">
+            <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#243D30" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><use href="#icon-house"/></svg>
+          </div>
+          <div>
+            <div class="feature-title">A real home, not a ward</div>
+            <div class="feature-desc">Your loved one lives in an actual residential home in a Lynnwood neighborhood&mdash;with the calm and comfort that comes with it.</div>
+          </div>
+        </div>
+        <div class="feature-row">
+          <div class="feature-icon-wrap">
+            <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#243D30" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M17 21v-2a4 4 0 00-4-4H5a4 4 0 00-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 00-3-3.87"/><path d="M16 3.13a4 4 0 010 7.75"/></svg>
+          </div>
+          <div>
+            <div class="feature-title">Caregivers who truly know them</div>
+            <div class="feature-desc">With at most six residents, our caregivers learn every person&rsquo;s preferences, routines, and needs&mdash;not just their care plan.</div>
+          </div>
+        </div>
+        <div class="feature-row">
+          <div class="feature-icon-wrap">
+            <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#243D30" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M14 2H6a2 2 0 00-2 2v16a2 2 0 002 2h12a2 2 0 002-2V8z"/><polyline points="14 2 14 8 20 8"/><line x1="16" y1="13" x2="8" y2="13"/><line x1="16" y1="17" x2="8" y2="17"/></svg>
+          </div>
+          <div>
+            <div class="feature-title">Washington State licensed</div>
+            <div class="feature-desc">Both homes are licensed and regularly inspected by the Washington State Department of Social &amp; Health Services (DSHS).</div>
+          </div>
+        </div>
+        <div class="feature-row">
+          <div class="feature-icon-wrap">
+            <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#243D30" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20.84 4.61a5.5 5.5 0 00-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 00-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 000-7.78z"/></svg>
+          </div>
+          <div>
+            <div class="feature-title">Family always welcome</div>
+            <div class="feature-desc">We keep families close&mdash;open communication, regular updates, and a warm welcome whenever you visit.</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- OUR TWO HOMES -->
+  <section class="our-homes" id="our-homes" aria-labelledby="our-homes-heading">
+    <div class="our-homes-header">
+      <div class="section-kicker">Two Homes, One Standard of Care</div>
+      <h2 class="section-headline" id="our-homes-heading">Both located in Lynnwood, Washington</h2>
+    </div>
+    <div class="homes-grid">
+
+      <article class="home-profile home-a">
+        <div class="home-profile-top">
+          <div class="home-profile-tag">1st &amp; Amazing AFH LLC</div>
+          <h3 class="home-profile-name">1st &amp; Amazing<br/>Adult Family Home</h3>
+          <div class="home-profile-meta">
+            <div class="meta-item">
+              <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><use href="#icon-phone"/></svg>
+              (206) 446-4472
+            </div>
+            <div class="meta-item">
+              <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><use href="#icon-star"/></svg>
+              5.0 Google Rating
+            </div>
+          </div>
+        </div>
+        <div class="home-profile-body">
+          <div class="services-label">Services Provided</div>
+          <ul class="services-list">
+            <li><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="#243D30" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><use href="#icon-check"/></svg>24-hour on-site supervision</li>
+            <li><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="#243D30" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><use href="#icon-check"/></svg>Personal care &mdash; bathing, dressing, grooming</li>
+            <li><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="#243D30" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><use href="#icon-check"/></svg>Medication administration</li>
+            <li><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="#243D30" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><use href="#icon-check"/></svg>Meal preparation &amp; housekeeping</li>
+            <li><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="#243D30" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><use href="#icon-check"/></svg>Mobility &amp; transfer assistance</li>
+            <li><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="#243D30" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><use href="#icon-check"/></svg>Dementia &amp; Alzheimer&rsquo;s care</li>
+            <li><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="#243D30" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><use href="#icon-check"/></svg>Companionship &amp; social engagement</li>
+          </ul>
+          <a href="tel:2064464472" class="btn-home">
+            <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><use href="#icon-phone"/></svg>
+            Call to Inquire
+          </a>
+        </div>
+      </article>
+
+      <article class="home-profile home-b">
+        <div class="home-profile-top">
+          <div class="home-profile-tag">New Flower AFH LLC</div>
+          <h3 class="home-profile-name">New Flower<br/>Adult Family Home</h3>
+          <div class="home-profile-meta">
+            <div class="meta-item">
+              <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><use href="#icon-phone"/></svg>
+              (832) 492-5521
+            </div>
+            <div class="meta-item">
+              <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><use href="#icon-pin"/></svg>
+              Est. May 2023 &middot; Lynnwood
+            </div>
+          </div>
+        </div>
+        <div class="home-profile-body">
+          <div class="services-label">Services Provided</div>
+          <ul class="services-list">
+            <li><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="#B86348" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><use href="#icon-check"/></svg>24-hour residential care</li>
+            <li><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="#B86348" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><use href="#icon-check"/></svg>Activities of daily living (ADL) support</li>
+            <li><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="#B86348" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><use href="#icon-check"/></svg>Medication management</li>
+            <li><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="#B86348" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><use href="#icon-check"/></svg>Memory &amp; cognitive care</li>
+            <li><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="#B86348" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><use href="#icon-check"/></svg>Hospice &amp; respite care support</li>
+            <li><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="#B86348" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><use href="#icon-check"/></svg>Long-term care placement</li>
+            <li><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="#B86348" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><use href="#icon-check"/></svg>Meals, housekeeping &amp; transportation</li>
+          </ul>
+          <a href="tel:8324925521" class="btn-home">
+            <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><use href="#icon-phone"/></svg>
+            Call to Inquire
+          </a>
+        </div>
+      </article>
+    </div>
+
+    <div class="license-strip">
+      <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#243D30" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><use href="#icon-shield"/></svg>
+      <div class="license-text">Both homes are active Washington State LLCs, licensed and regularly inspected by the Washington State Department of Social &amp; Health Services (DSHS). Located in Lynnwood, Washington.</div>
+    </div>
+  </section>
+
+  <!-- SERVICES -->
+  <section class="services-section" id="services" aria-labelledby="services-heading">
+    <div class="services-header-grid">
+      <div>
+        <div class="section-kicker">What We Provide</div>
+        <h2 class="section-headline" id="services-heading">Comprehensive care under one roof</h2>
+      </div>
+      <p class="section-body">Both homes offer a full spectrum of support services, each tailored to the individual resident&rsquo;s care plan and adjusted as needs evolve over time.</p>
+    </div>
+    <div class="services-grid">
+
+      <div class="service-tile">
+        <div class="tile-icon-wrap">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#243D30" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 21v-2a4 4 0 00-4-4H8a4 4 0 00-4 4v2"/><circle cx="12" cy="7" r="4"/></svg>
+        </div>
+        <div class="tile-name">Personal Care</div>
+        <p class="tile-desc">Bathing, dressing, grooming, and hygiene provided with dignity and attentiveness.</p>
+      </div>
+
+      <div class="service-tile">
+        <div class="tile-icon-wrap">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#243D30" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="3" width="7" height="7"/><rect x="14" y="3" width="7" height="7"/><rect x="14" y="14" width="7" height="7"/><rect x="3" y="14" width="7" height="7"/></svg>
+        </div>
+        <div class="tile-name">Medication Management</div>
+        <p class="tile-desc">Accurate administration, scheduling, and coordination with prescribing physicians.</p>
+      </div>
+
+      <div class="service-tile">
+        <div class="tile-icon-wrap">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#243D30" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M2 3h6a4 4 0 014 4v14a3 3 0 00-3-3H2z"/><path d="M22 3h-6a4 4 0 00-4 4v14a3 3 0 013-3h7z"/></svg>
+        </div>
+        <div class="tile-name">Memory Care</div>
+        <p class="tile-desc">Structured, stimulating routines for residents living with Alzheimer&rsquo;s or dementia.</p>
+      </div>
+
+      <div class="service-tile">
+        <div class="tile-icon-wrap">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#243D30" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 2v7c0 1.1.9 2 2 2h4a2 2 0 002-2V2"/><path d="M7 2v20"/><path d="M21 15V2a5 5 0 00-5 5v6c0 1.1.9 2 2 2h3zm0 0v7"/></svg>
+        </div>
+        <div class="tile-name">Meal Preparation</div>
+        <p class="tile-desc">Home-cooked, diet-appropriate meals prepared fresh daily in a real kitchen.</p>
+      </div>
+
+      <div class="service-tile">
+        <div class="tile-icon-wrap">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#243D30" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="5" r="3"/><line x1="12" y1="8" x2="12" y2="14"/><path d="M8 18l4-4 4 4"/><line x1="12" y1="14" x2="12" y2="21"/></svg>
+        </div>
+        <div class="tile-name">Mobility Assistance</div>
+        <p class="tile-desc">Transfer support, fall prevention, and exercise guidance to maintain independence.</p>
+      </div>
+
+      <div class="service-tile">
+        <div class="tile-icon-wrap">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#243D30" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="23 4 23 10 17 10"/><path d="M20.49 15a9 9 0 11-2.12-9.36L23 10"/></svg>
+        </div>
+        <div class="tile-name">Respite Care</div>
+        <p class="tile-desc">Short-term placement so family caregivers can rest, without disrupting routines.</p>
+      </div>
+
+      <div class="service-tile">
+        <div class="tile-icon-wrap">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#243D30" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20.84 4.61a5.5 5.5 0 00-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 00-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 000-7.78z"/></svg>
+        </div>
+        <div class="tile-name">Hospice Support</div>
+        <p class="tile-desc">Compassionate end-of-life care coordination alongside your hospice provider.</p>
+      </div>
+
+      <div class="service-tile">
+        <div class="tile-icon-wrap">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#243D30" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><use href="#icon-house"/></svg>
+        </div>
+        <div class="tile-name">Housekeeping</div>
+        <p class="tile-desc">Laundry, cleaning, and home upkeep so every resident lives in a clean, calm environment.</p>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- TESTIMONIAL -->
+  <section class="testimonial-section" aria-labelledby="testimonial-heading">
+    <div>
+      <div class="test-kicker">What Families Say</div>
+      <h2 class="test-left-headline" id="testimonial-heading">Trusted by families across the Lynnwood area</h2>
+    </div>
+    <div>
+      <div class="star-row" role="img" aria-label="5 out of 5 stars">
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="#A8895C" stroke="none" aria-hidden="true"><use href="#icon-star"/></svg>
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="#A8895C" stroke="none" aria-hidden="true"><use href="#icon-star"/></svg>
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="#A8895C" stroke="none" aria-hidden="true"><use href="#icon-star"/></svg>
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="#A8895C" stroke="none" aria-hidden="true"><use href="#icon-star"/></svg>
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="#A8895C" stroke="none" aria-hidden="true"><use href="#icon-star"/></svg>
+      </div>
+      <blockquote class="test-quote">&ldquo;From the moment we walked in, it felt like a home&mdash;not a facility. The caregivers knew my mother&rsquo;s name, her favorite music, her schedule. Our family finally stopped worrying.&rdquo;</blockquote>
+      <div class="test-author">
+        <div class="author-initial" aria-hidden="true">F</div>
+        <div>
+          <div class="author-name">Family of a 1st &amp; Amazing resident</div>
+          <div class="author-role">Lynnwood, WA &middot; 5-star Google review</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTACT -->
+  <section class="contact-section" id="contact" aria-labelledby="contact-heading">
+    <div class="contact-left">
+      <div class="section-kicker">Get in Touch</div>
+      <h2 id="contact-heading">Ready to find your loved one a <em>real home?</em></h2>
+      <p class="contact-sub">Tours are always welcome. No pressure&mdash;just an honest conversation about what your loved one needs and how we can help.</p>
+      <div class="contact-btn-group">
+        <a href="tel:2064464472" class="btn-contact btn-contact-a">
+          <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><use href="#icon-phone"/></svg>
+          Call 1st &amp; Amazing
+        </a>
+        <a href="tel:8324925521" class="btn-contact btn-contact-b">
+          <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><use href="#icon-phone"/></svg>
+          Call New Flower
+        </a>
+      </div>
+    </div>
+
+    <div class="contact-cards">
+      <div class="contact-card">
+        <div class="cc-icon">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#243D30" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><use href="#icon-house"/></svg>
+        </div>
+        <div>
+          <div class="cc-label">1st &amp; Amazing AFH LLC</div>
+          <div class="cc-name">1st &amp; Amazing Adult Family Home</div>
+          <div class="cc-phone">(206) 446-4472</div>
+          <div class="cc-city">Lynnwood, Washington &middot; 5.0 Google Rating</div>
+        </div>
+      </div>
+      <div class="contact-card">
+        <div class="cc-icon">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#243D30" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><use href="#icon-house"/></svg>
+        </div>
+        <div>
+          <div class="cc-label">New Flower AFH LLC</div>
+          <div class="cc-name">New Flower Adult Family Home</div>
+          <div class="cc-phone">(832) 492-5521</div>
+          <div class="cc-city">Lynnwood, Washington &middot; Est. May 2023</div>
+        </div>
+      </div>
+      <div class="contact-card">
+        <div class="cc-icon">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#243D30" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><use href="#icon-pin"/></svg>
+        </div>
+        <div>
+          <div class="cc-label">Location</div>
+          <div class="cc-name">Lynnwood, Washington</div>
+          <div class="cc-city">Washington State DSHS Licensed Adult Family Homes</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<!-- FOOTER -->
+<footer>
+  <div class="footer-top">
+    <div>
+      <div class="footer-brand-name">1st &amp; Amazing &middot; <span>New Flower</span></div>
+      <p class="footer-desc">Two state-licensed Adult Family Homes providing compassionate, 24-hour residential care for seniors and adults with disabilities in Lynnwood, Washington.</p>
+    </div>
+    <div>
+      <div class="footer-col-title">Our Homes</div>
+      <ul class="footer-links">
+        <li><a href="tel:2064464472">1st &amp; Amazing AFH</a></li>
+        <li><a href="tel:8324925521">New Flower AFH</a></li>
+        <li><a href="#our-homes">Compare Homes</a></li>
+      </ul>
+    </div>
+    <div>
+      <div class="footer-col-title">Information</div>
+      <ul class="footer-links">
+        <li><a href="#why-afh">What is an AFH?</a></li>
+        <li><a href="#services">Services</a></li>
+        <li><a href="#contact">Schedule a Tour</a></li>
+        <li><a href="https://www.dshs.wa.gov" target="_blank" rel="noopener">WA DSHS</a></li>
+      </ul>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <div>&copy; <span id="current-year">2026</span> 1st &amp; Amazing AFH LLC &amp; New Flower AFH LLC &nbsp;&middot;&nbsp; Lynnwood, Washington</div>
+    <div class="footer-badges">
+      <div class="f-badge">WA Licensed</div>
+      <div class="f-badge">DSHS Regulated</div>
+      <div class="f-badge">24/7 Care</div>
+    </div>
+  </div>
+</footer>
+
+<script src="/js/main.js"></script>
+</body>
+</html>

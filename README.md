@@ -1,6 +1,6 @@
 # 1st & Amazing · New Flower — Adult Family Homes
 
-Marketing site for two Washington State-licensed Adult Family Homes in Lynnwood, WA. Plain static HTML/CSS/JS — no build step, no dependencies.
+Marketing site for Adult Family Homes in Lynnwood, WA.
 
 ## Project structure
 
